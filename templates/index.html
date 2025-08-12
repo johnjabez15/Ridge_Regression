@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Advertising Sales Predictor</h1>
+        <form action="/predict" method="post">
+            <label>TV Ad Budget ($k):</label>
+            <input type="number" name="tv_budget" step="0.01" required>
+
+            <label>Radio Ad Budget ($k):</label>
+            <input type="number" name="radio_budget" step="0.01" required>
+
+            <label>Newspaper Ad Budget ($k):</label>
+            <input type="number" name="newspaper_budget" step="0.01" required>
+            
+            <button type="submit">Predict Sales</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* style.css */
+/* This file provides professional styling for the index.html and result.html pages. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    /* Set a clean, modern font and a subtle background color */
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+    /* Use flexbox to center the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    /* Style the main content container */
+    background-color: #ffffff;
+    padding: 2.5rem 3rem; /* Use rem for responsive spacing */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h1 {
+    /* Style the main heading */
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+form {
+    /* Style the form layout with a gap between elements */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    /* Style the labels for form inputs */
+    text-align: left;
+    font-weight: 600;
+    color: #4a698c;
+    margin-top: 0.5rem;
+}
+
+input[type="number"] {
+    /* Style the number input fields */
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    /* Focus state for input fields */
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button[type="submit"] {
+    /* Style the submit button */
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+button[type="submit"]:hover {
+    /* Hover state for the button */
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.result-box {
+    /* Style the box displaying the prediction result */
+    background-color: #f0f7ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border: 2px solid #d4e3f4;
+    text-align: left;
+}
+
+.result-box p {
+    /* Style the text inside the result box */
+    margin: 0.5rem 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.result-box p strong {
+    /* Style the strong tag inside the result box */
+    font-weight: 700;
+    color: #007bff;
+}
+
+a {
+    /* Style the link for "Make Another Prediction" */
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    /* Hover state for the link */
+    color: #0056b3;
+}
